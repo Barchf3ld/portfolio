@@ -74,3 +74,83 @@ header nav a:hover{
 #button-talk:hover{
     opacity: 0.77;
 }
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(/imgs/pexels-lukas-574071\(2\).jpg) no-repeat center;
+    background-size: cover;  
+    height: 867px;
+    padding-left: 156px;
+}
+
+section .info{
+    display: inline-block;
+    text-align: left;
+    
+}
+
+section .info h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0096A4;
+}
+
+section .info h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section .info h1 #barch{
+    color: #0096A4;
+}
+
+section .info h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+section .info .buttons{
+    display: inline-block;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 21px;
+}
+
+section .info .buttons #button-download, #button-talkme{
+    width: 179px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    color: #1F1F23;
+    text-decoration: none;
+    padding: 6px 18px;
+    margin-right: 50px;
+}
+
+#button-download:hover{  
+    opacity: 0.77;
+}
+
+#button-talkme:hover{
+    opacity: 0.77;
+    
+}
+
+.banner img{
+    display: inline-block;
+    margin-right: 156px;
+    transition: transform 2.5s ease-in-out;
+}
+
+.banner img:hover{
+    transform: scale(1.1);
+}
