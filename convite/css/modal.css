@@ -1,0 +1,218 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-button {
+  display: block;
+  margin: 10px;
+  background-color: red;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 25px;
+}
+
+@media(max-width:900px){
+  .cards-container{
+    flex-direction: column;
+  }
+}
+
+.cards-container ul{
+  background-color: #FAF7F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  max-width: 300px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cards-container li{
+  padding-bottom: 20px;
+  text-align: center;
+  color: #81948B;
+}
+
+.cards-container .dia{
+  color: #a57010;
+  text-align: center;
+}
+
+.titulo-modal {
+  color: #81948B;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.modal-content{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  width: max-content;
+}
+
+.modal-container{
+  background-color: white;
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  min-height: 200px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.modal-container input{
+  padding: 10px 20px;
+  width: 300px;
+  border: #81948B 1px solid;
+  outline-color: #BFA880;
+  color: #81948B;
+  font: 300 1rem "Roboto Slab", sans-serif;
+}
+
+.input_musica{
+margin-top: 60px;
+}
+
+.modal{
+  background-color: rgba(90, 122, 107, 0.9);
+  z-index: 5;
+}
+
+.modal-scroll{
+  overflow-y: scroll;
+}
+
+.modal-container .btn{
+  margin-top: 20px;
+}
+
+.modal-container::before{
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -45px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: white;
+}
+
+#modal1 .modal-container::before {
+ background-image: url("../img/musica.svg");
+}
+
+#modal2 .modal-container::before {
+  background-image: url("../img/gravata.svg");
+ }
+
+ #modal3 .modal-container::before {
+  background-image: url("../img/check.svg");
+ }
+
+ #modalBtn .modal-container::before {
+  background-image: url("../img/presentes.svg");
+ }
+
+.modal-container .close{
+background-color: #81948B;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+align-self: flex-end;
+justify-self: center;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: absolute;
+top: -20px;
+right: -15px;
+}
+
+.erro{
+display: none;
+}
+
+.erro.ativo{
+  color: red;
+  display: block;
+}
+
+.dicas{
+max-width: 400px;
+max-width: 50vw;
+}
+
+.dicas h2{
+  font:  400 1.8rem "Roboto Slab", sans-serif;
+  text-transform: initial;
+  text-align: center;
+  color: #BFA880;
+  padding-top: 20px;
+}
+
+.dicas li{
+  font: 400 1.1rem "Roboto Slab", sans-serif;
+  padding-bottom: 20px;
+  color: #81948B;
+}
+
+@media(min-width:500px){
+  .dicas{
+    max-width: 80vw;
+    }
+}
+
+@media(min-width:300px){
+  .dicas{
+    max-width: 70vw;
+    }
+}
+
+.dicas li{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  }

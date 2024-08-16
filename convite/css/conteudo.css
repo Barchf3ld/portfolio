@@ -1,0 +1,83 @@
+.img{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    display: block;
+}
+
+.conteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+.conteudo::after{
+ content: "";
+ position: absolute;
+ background-image: url("../img/ondas.svg");
+ width: 100%;
+ background-repeat: no-repeat;
+ height: 100%;
+ top: -150px;
+}
+
+@media(max-width:900px) {
+    .conteudo::after{
+        top: -100px;
+       }
+    }
+@media(max-width:600px) {
+    .conteudo::after{
+        top: -40px;
+       }
+    }
+
+.conteudo .img_casal{
+    padding-top: 50px;
+}
+
+.local-cerimonia{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #1D949C;  
+}
+
+.local-cerimonia a{
+    padding-top: 5px;
+    color: #1D949C;
+    font-weight: 400;
+    font-weight: bold;  
+}
+
+#logo{
+    padding-top: 40px;
+    padding-bottom: 200px; 
+}
+
+#presenca{
+    padding-top: 120px;
+    color: #1D949C;
+}
+
+#confirmar{
+    z-index: 5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}

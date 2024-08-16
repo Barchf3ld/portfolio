@@ -1,0 +1,364 @@
+.abrir{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1D949C;
+    top: 0px;
+    left: 0px;
+}
+
+.abrir button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: #1D949C;
+}
+.abrir.oculto{
+    display: none;
+}
+.js .home{
+    opacity: 1;
+}
+.home.ativo{
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 1.5s;
+}
+.home {
+    background-image:  url("../img/fundo2.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: calc(20vh);
+    overflow-x: hidden;  
+}
+.data {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-self: center;
+    color: white;  
+    position: relative;
+    display: flex; 
+}
+.detalhe-e{
+    background-color: #B6D0AB;
+    color: #5A7A6B;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.data::after, .data::before{
+content: "";
+width: 154px;
+height: 1px;
+top: 15px;
+background-color: white;
+position: absolute;
+}
+.data::after{
+  right:  150px;
+}
+.data::before{
+    left:  150px;
+  }
+  .container_nomes{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .nomes {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+.container_nomes::after{
+    content: "";
+    width:100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    position: absolute;
+}
+@media (max-width: 970px) {
+    .container_nomes::after {
+        display: none;
+    }
+}
+@media(max-width:970px) {
+    .data::after,  .data::before{
+        width:40px;
+      }
+  }
+@media(max-width:400px) {
+    .data::after,  .data::before{
+      display: none;
+      }
+  }
+.frase {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+@media(max-width:555px) {
+    .nomes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .frase {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.9rem !important;
+    }
+    .marks{
+        width: 20px !important;
+      
+    }
+  }
+.marks{
+    width: 48px;
+}
+.marks:last-child{
+    transform: rotate(180deg);  
+}
+.abrir{
+    display: flex;
+    justify-content: end; 
+}
+.ondas{
+position: relative;
+}
+.img-casal-fundo{
+    width: 800px;
+    height: 100%;
+    background-image: url("../img/casal.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nomes_button{
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.hora{
+    text-align: center;
+}
+.hora p:first-child {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #303525 ; 
+}
+.hora p:last-child {
+    color: white;
+  background-color: #26ABB4;
+}
+.links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #606060;
+}
+.flex {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flex p {
+    padding-top: 10px;
+}
+.contador{
+    width: 510px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/arco2.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    top: -130px;
+    left: -10px;
+}
+.contador-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: white;
+    padding: 40px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contador p{
+    margin-top: 10px;
+    color: #606060;
+    padding-bottom: 20px;
+}
+.palavra-chave{
+    color: #a57010;
+}
+.container_tempo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+.tempo{
+  color: #606060;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+@media(max-width:520px) {
+    .contador{
+        width: 415px;
+        height: 380px;
+        position: relative;
+        z-index: 1;
+        top: -80px;
+    }
+    .container_tempo{
+        gap: 10px;
+    }
+    .contador-container{
+        width: 300px;
+        height:300px;
+    }
+    .tempo span{
+        font-size: 1.2rem !important;
+    }
+  }
+  @media(max-width:400px) {
+    .contador{
+        width: 350px;
+        height: 320px;
+        position: relative;
+        z-index: 1;
+        top: -80px;
+    }
+    .container_tempo{
+        gap: 8px;
+    }
+    .contador-container{
+        width: 250px;
+        height: 250px;
+    }
+    .tempo span{
+        font-size: 1rem !important;
+    }
+  }
+.slide_casal{
+    padding-top: 50px;
+    width: 100%;
+}
+.slide_casal img{
+display: block;
+width: 100%;
+}
+.vestimenta{
+    text-align: center;
+    max-width: 40ch;
+    position: relative;
+    padding-top: 100px;
+}
+.vestimenta ::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: -20px;
+    background-image: url("../img/flor.svg");
+    position: absolute;
+    opacity: 0.01;
+}
+.vesti ::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: -20px;
+    transform: rotate(180deg);
+    background-image: url("../img/flor.svg");
+    position: absolute;
+    opacity: 0.01;
+}
+.segundo_p, .terceiro_p{
+    margin-top: 40px; 
+}
+.hotel{
+    padding-bottom: 50px!important;
+}
+.paletas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.paletas span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.paleta-1{
+    background-color: #B4BEB3;
+}
+.paleta-2{
+    background-color: #AEBBA2;
+}
+.paleta-3{
+    background-color: #99B4A3;
+}
+.paleta-4{
+    background-color: #95B198;
+}
+.paleta-5{
+    background-color: #62A08B;
+}
+h2.vestimenta-convidados{
+    padding-top: 40px;
+}
+.esporte-fino{
+    color: #1D949C;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}

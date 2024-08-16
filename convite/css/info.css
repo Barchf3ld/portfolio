@@ -1,0 +1,146 @@
+.informacoes-casamento{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 50; 
+}
+
+@media(max-width:800px) {
+  .informacoes-casamento{
+    grid-template-columns: 1fr;
+  }
+
+  .inf{
+    margin-bottom: 100px;
+  }
+}
+
+.inf, .inf-2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-icon img{
+  width: 70px;
+}
+
+.container-icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.bandeira_container{
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.band{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+
+.band p{
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.band .band-1{
+  top:8px;
+  font: 2.6rem "HighSpirited", sans-serif;
+}
+
+.band .band-2{
+  top: 9px;
+  font: 2.8rem "HighSpirited", sans-serif;
+}
+
+.band img{
+  position: absolute;
+}
+
+.band-texto{
+  color: #81948B;
+  font: 400 1.2rem "Roboto Slab", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dia{
+  padding-top: 50px;
+  padding-bottom: 12px;
+  font: 400 1.8rem "Roboto Slab", sans-serif;
+}
+
+.informacoes{
+  padding-bottom: 25px;
+}
+
+.container-infos .btn{
+  color: #81948B!important; 
+}
+
+ .btn{
+  background-color:white !important;
+  font: 400 1.2rem "Roboto Slab", sans-serif !important;
+  color: #81948B !important; 
+  padding: 10px !important;
+  width: 180px !important;
+  text-align: center !important;
+  border-radius: 15px!important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+  border: solid 0.5px #81948B !important;
+}
+
+.addeventatc_icon{
+  display: none;
+}
+
+.btn:hover{
+  background-color:#81948B !important;
+  color: white !important;
+}
+
+.container-infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 4;
+}
+
+.informacoes{
+  font: 400 1.2rem "Roboto Slab", sans-serif;
+}
+
+.conteudo::before{
+  content: "";
+  background: url("../img/ondas-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -200px;
+  width: 100%;
+  height: 200px;
+}
