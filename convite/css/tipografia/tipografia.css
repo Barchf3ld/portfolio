@@ -1,0 +1,63 @@
+.size {
+    font: 300 1.1rem "Roboto Slab", sans-serif;
+}
+
+.size-b {
+    font: 500 1.2rem "Roboto Slab", sans-serif;
+}
+
+.font-1-300 {
+    font: 300 1.5rem "Roboto Slab", sans-serif;
+}
+
+.font-1-400 {
+    font: 400 1.2rem "Roboto Slab", sans-serif;
+}
+
+.font-1-400-s {
+    font: 400 0.9rem "Roboto Slab", sans-serif;
+}
+
+.font-1-400-m {
+    font: 400 1.1rem "Roboto Slab", sans-serif;
+}
+
+.font-1-400-sm {
+    font: 400 1.1rem "Roboto Slab", sans-serif;
+}
+
+.font-2 {
+    font: 6rem "HighSpirited", sans-serif;
+}
+
+.font-2-a {
+    font: 4.2rem "HighSpirited", sans-serif !important;
+}
+.font-2-b{
+    font: 4.2rem "HighSpirited", sans-serif !important;
+}
+
+@font-face {
+    font-family: HighSpirited;
+    src: url("HighSpirited.ttf");
+}
+
+@media(max-width:520px) {
+    .font-2-a{
+        font: 3rem "HighSpirited", sans-serif !important;
+    }
+
+    .font-1-400-sm {
+        font: 400 1rem "Roboto Slab", sans-serif;
+    }
+}
+
+@media(max-width:400px) {
+    .font-2-a{
+        font: 2.5rem "HighSpirited", sans-serif !important;
+    }
+
+    .font-1-400-sm {
+        font: 400 0.9rem "Roboto Slab", sans-serif;
+    }
+}
