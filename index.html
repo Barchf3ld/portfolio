@@ -1,68 +1,268 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Barchfeld - Dev Front-end</title>
 
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio - Matheus Barchfeld">
+    <title>Portfólio - Matheus Barchfeld</title>
+
+    <link rel="shortcut icon" href="assets/imgs/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/43b8915102.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <header>     
-        <a href="index.html"><img id="logo" src="imgs/MB2.png" alt=""></a>  
-            <nav class="nav">
-                <a href=""><i class="fas fa-home"></i>HOME</a>
-                <a href=""><i class="fa-solid fa-user"></i>SOBRE</a>
-                <a href=""><i class="fa-solid fa-file"></i>CURRICULO</a>
-                <a href=""><i class="fa-solid fa-rectangle-list"></i>PROJETOS</a>
-                <a id="button-talk" href="">FALE COMIGO</a>
-            </nav>
-    </header>
-    <section class="banner">
-        <div class="info">
-            <h2>Olá, eu sou</h2>
-            <h1>Matheus <span id="barch">Barchfeld</span></h1>
-            <h3>Desenvolvedor Front-End</h3>
 
-            <div class="buttons">
-                <a id="button-download" href="">Download CV</a>
-                <a id="button-talkme" href="">Fale Comigo</a>
+</head>
+<body class="" onscroll="onScroll()">
+    <header id="navigation" class="">
+        <div class="container">
+            <div class="navigation">
+            <a href="#" onclick="closeMenu()" class="logo">matheusbarchfeld</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#initial" onclick="openAnimation(); closeMenu();">Home</a></li>
+                    <li><a href="#about-me" onclick="openAnimation(); closeMenu();">Sobre</a></li>
+                    <li><a href="#experiences" onclick="openAnimation(); closeMenu();">Experiencias</a></li>
+                    <li><a href="#applications" onclick="openAnimation(); closeMenu();">Projetos</a></li>
+                    <li><a href="#contact" onclick="openAnimation(); closeMenu();">Contato</a></li>
+                    <!--<li><label class="switch"><input type="checkbox" onchange="changeTheme()" id="switch"><span class="slider"></span></label></li>-->
+                </ul>
+
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/barchf3ld/" aria-label="Instagram" target="_blank" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <title>Instagram</title>
+                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                      </a></li>
+                    <li><a href="https://www.linkedin.com/in/matheus-barchfeld/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <title>LinkedIn</title>
+                          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                          <rect x="2" y="9" width="4" height="12"></rect>
+                          <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                      </a></li>
+                    <li><a href="https://github.com/barchf3ld" aria-label="GitHub" target="_blank" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <title>GitHub</title>
+                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                          </path>
+                        </svg>
+                      </a></li>
+                  </ul>
+            </div>
+                <div class="container-button" onclick="openAnimation()">
+                       <div id="buttonstroke" class="button-stroke"></div>
+                </div>
             </div>
         </div>
-        
-        <img src="imgs/Matheus.png" alt="">
+    </header>
+    <span id="initial"></span>
+    <section class="initial">
+        <div class="container">
+            <div class="initial-content">
+                <h3>Olá, o meu nome é</h3>
+                <h1>Matheus Barchfeld</h1>
+                <div class="estatico">Desenvolvedor<span class="dinamico">Front-end</span></div>
+                <p>Sou um Desenvolvedor Front-End (e ocasionalmente UI designer) especializado em tornar as experiências digitais mais fáceis para as pessoas. Atualmente, estou procurando por novas oportunidades!</p>
+                <a href="public/Matheus-Barchfeld.pdf" download="">
+                    Baixar resumo
+                  </a>
+                </div>
+                  <div class="numbers-animation">
+                    <div class="numbers-one">
+                        <h2>1</h2>
+                        <h2>0</h2>
+                        <h2>0</h2>
+                    </div>
+                    <div class="numbers-two">
+                        <h2>1</h2>
+                        <h2>1</h2>
+                        <h2>0</h2>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="triangle-svg" height="290" width="550">
+                        <polygon points="180,10 300,190 160,210" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
+                      </svg>
+                  </div>
+            
+            <div class="animation-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="circle-svg" width="352" height="352" overflow="visible">
+                    <circle cx="176" cy="176" r="174" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.921,11.9271"></circle>
+                </svg>
+            </div>
+        </div>
     </section>
+    <span id="about-me"></span>
+    <section class="about-me">
+        <div class="container">           
+                <div class="about-me-img"><img src="assets/imgs/profile.jpg" alt="Foto Matheus Barchfeld"></div>
 
-<!--
-    <section>
-        <h2>Olá, tudo bem contigo?</h2>
-        <p>
-            Meu nome é Matheus Barchfeld, sou
-            desenvolvedor Front-end em formação.
-            Iniciei meus estudos na área tecnológica
-            em 2012, com o curso de Montagem e
-            Manutenção de Computadores.
-        </p>
-        <p>
-            Desde então, sigo estudando nessa área,
-            buscando o aperfeiçoamento, e hoje com
-            o foco no desenvolvimento Front-end.
-        </p>
-        <p>
-            Entusiasta tecnologico, gosto de sempre
-            inovar, automatizando diversas tarefas
-            cotidianas, tornando o dia-a-dia mais
-            simples.
-        </p>
-
+                <div class="about-me-text">
+                    <h3>Sobre</h3>
+                    <p>Iniciei meus estudos na área da tecnologia em 2012, com o curso de Montagem e Manutenção de Computadores.
+                    Desde então, sigo estudando nessa área, buscando o aperfeiçoamento e hoje, desenvolvo no Front-end. </p>
+                    <p>Meu foco é aprender novas coisas e aprimorar as habilidades que possuo, para o desenvolvimento de novos sistemas para uma melhor experiência do usuário. </p>
+                </div>   
+        </div>
     </section>
--->
+    <span id="experiences"></span>
+    <section class="experiences">
+        <div class="container">
+            <h3>Experiencias</h3>
+            <h4>Linguagens e Tecnologias</h4>
+            <div class="experiences-languages"> 
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    HTML 5</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    CSS 3</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    JavaScript</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    ReactJS</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    NodeJS</p>
+                </div>
+            </div>
+            <h4>Softwares Gráficos</h4>
+            <div class="experiences-graphics">
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    Photoshop</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    Ilustrator</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    After Effects</p>
+                </div>
+                <div class="card-experiences">
+                    <p><i class="fa-solid fa-square-check"></i>
+                    Figma</p>
+                </div>
+                <div id="card-none">
+                </div>
+            </div>
+        </div>
+    </section>
+    <span id="applications"></span>
+    <section class="applications">
+        <div class="container">
+            <h3>Projetos</h3>
+            <h4>Aplicações que desenvolvi</h4>
+                <div class="applications-projects">
+                    <a href="http://doctorcare.matheusbarchfeld.com.br" target="_blank">
+                        <div class="card-applications">
+                            <img src="assets/imgs/card-doctorcare.png" alt="">
+                            <div class="card-content">
+                                <h4>DoctorCare - Clinica Médica</h4>
+                                <p>Projeto desenvolvido em um evento da Rocketseat para uma clinica médica.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://imobiliaria.matheusbarchfeld.com.br" target="_blank">
+                        <div class="card-applications">
+                            <img src="assets/imgs/card-bluesky.png" alt="">
+                            <div class="card-content">
+                                <h4>BlueSky Imobiliária</h4>
+                                <p>Sistema para cadastro de imóveis desenvolvido para um cliente. Com todas as funcionalidades no Front-end (cadastro, atualização, edição e remoção de imóveis).</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://barchpay.matheusbarchfeld.com.br" target="_blank">
+                        <div class="card-applications">
+                            <img src="assets/imgs/card-barchpay.png" alt="">
+                            <div class="card-content">
+                                <h4>BarchPay</h4>
+                                <p>É um componente que simula o formulário de preenchimento de cartão de crédito.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Barchf3ld/iWaiterApp" target="_blank">
+                        <div class="card-applications">
+                            <img src="assets/imgs/card-iWaiterApp.png" alt="">
+                            <div class="card-content">
+                                <h4>iWaiterApp</h4>
+                                <p>Um sistema para gerenciar pedidos de maneira eficiente e simples. Pode ser utilizado com ou sem garçons, tornando possível seu uso em todos os casos!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://barchlinks.matheusbarchfeld.com.br/" target="_blank">
+                        <div class="card-applications">
+                            <img src="assets/imgs/card-barchlinks.png" alt="">
+                            <div class="card-content">
+                                <h4>BarchLinks</h4>
+                                <p>Projeto desenvolvido para agregar links e usar como cartão de visitas online.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-applications">
+                        <img src="assets/imgs/card-portfolio.jpg" alt="">
+                        <div class="card-content">
+                            <h4>Portfólio Pessoal</h4>
+                            <p>Projeto desenvolvido para ser utilizado como portfólio pessoal. É nesse site que você está nesse momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <span id="contact"></span>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h3>Entre em contato</h3>
+                <p>Estou procurando por novas oportunidades. Qualquer dúvida, feedback ou apenas dar um oi, ficarei feliz em receber e assim que possível irei te retornar!</p>
+                <a href="mailto:contato@matheusbarchfeld.com.br">Diga oi</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/barchf3ld/" aria-label="Instagram" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <title>Instagram</title>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a></li>
+            <li><a href="https://www.linkedin.com/in/matheus-barchfeld/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <title>LinkedIn</title>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a></li>
+            <li><a href="https://github.com/barchf3ld" aria-label="GitHub" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <title>GitHub</title>
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a></li>
+          </ul>
+        <p>© 2024 | Matheus Barchfeld - Desenvolvedor</p>
+    </footer>
 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 </html>
